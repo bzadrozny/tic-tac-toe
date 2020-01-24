@@ -1,23 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a678cb0c-20bf-4ffd-aee3-0b5d36510929" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/board/Board.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/board/Line.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/board/Tile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/footer/Footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/header/Header.js" afterDir="false" />
+    <list default="true" id="a678cb0c-20bf-4ffd-aee3-0b5d36510929" name="Default Changelist" comment="init">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +19,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/bzadrozny/tic-tac-toe.git" />
+      </set>
+    </option>
   </component>
   <component name="ProjectId" id="1Wr06M0PCJJuxQF2VuOlMpIyeXi" />
   <component name="ProjectViewState">
@@ -92,8 +85,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579892230084</updated>
-      <workItem from="1579892233501" duration="14088000" />
+      <workItem from="1579892233501" duration="14898000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1579907041423</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579907041424</updated>
+    </task>
+    <task id="LOCAL-00002" summary="init">
+      <created>1579907496278</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1579907496278</updated>
+    </task>
+    <task id="LOCAL-00003" summary="init">
+      <created>1579907673999</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1579907674000</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,11 +119,30 @@
       </list>
     </option>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1579897762772">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1579897762772" />
+    <state x="585" y="117" key="CommitChangelistDialog2" timestamp="1579907672908">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="585" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1579907672908" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1579896349678">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -117,6 +151,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1220" y="279" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1579892256286" />
+    <state x="836" y="414" width="260" height="211" key="Github.ShareDialog" timestamp="1579907140180">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="836" y="414" width="260" height="211" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579907140180" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1579906875799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -133,6 +171,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579906875798" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1579907499331">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1579907499331" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1579896349678">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
