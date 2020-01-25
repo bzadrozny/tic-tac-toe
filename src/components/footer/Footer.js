@@ -19,7 +19,7 @@ const Footer = (props) => {
       <div style={footerStyle}>
         <div>
           <button style={resetBtnStyle} onClick={() => props.resetBoard()}>
-            Start again
+            Begin again
           </button>
         </div>
       </div>
