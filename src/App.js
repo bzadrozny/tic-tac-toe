@@ -8,15 +8,6 @@ import './App.css';
 
 class App extends React.Component {
 
-  state = {
-    timer: 0,
-    time: 15,
-    player: 'X',
-    tiles: [['', '', ''], ['', '', ''], ['', '', '']],
-    gameStarted: false,
-    gameEnded: false
-  };
-
   componentWillUnmount() {
     this.props.clearTimer();
   }
