@@ -1,4 +1,6 @@
 import React from "react";
+import * as actions from "../../actions/ticTacToeActions";
+import {connect} from "react-redux";
 
 const Footer = (props) => {
 
@@ -18,7 +20,7 @@ const Footer = (props) => {
   return (
       <div style={footerStyle}>
         <div>
-          <button style={resetBtnStyle} onClick={() => props.resetBoard()}>
+          <button style={resetBtnStyle} onClick={props.resetBoard}>
             Begin again
           </button>
         </div>
@@ -27,4 +29,9 @@ const Footer = (props) => {
 
 };
 
-export default Footer;
+
+const mapDispatchToPros = (dispatch) => ({
+  resetBoard: () => dispatch(actions.resetBoard())
+});
+
+export default connect(() => ({}), mapDispatchToPros)(Footer);

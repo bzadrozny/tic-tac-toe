@@ -2,6 +2,7 @@ import React from "react";
 import Line from "./Line";
 import Winner from "./Winner";
 import StartBtn from "./StartBtn";
+import {connect} from "react-redux";
 
 const Board = (props) => {
   let startBtn;
@@ -9,18 +10,12 @@ const Board = (props) => {
   let lines = [];
 
   if (!props.gameStarted) {
-    startBtn = <StartBtn runGame={props.runGame}/>
+    startBtn = <StartBtn/>
   } else if (props.gameEnded) {
     winner = <Winner winner={props.winner}/>;
   } else {
     for (let i = 0; i < 3; i++) {
-      lines.push(
-          <Line
-              key={i} row={i}
-              selectTile={props.selectTile} tiles={props.tiles[i]}
-              gameEnded={props.gameEnded} gameStarted={props.gameStarted}
-          />
-      );
+      lines.push(<Line key={i} row={i}/>);
     }
   }
   let style = {
@@ -39,4 +34,10 @@ const Board = (props) => {
   )
 };
 
-export default Board;
+const mapStateToProps = (state) => ({
+  gameStarted: state.gameStarted,
+  gameEnded: state.gameEnded,
+  winner: state.player
+});
+
+export default connect(mapStateToProps)(Board);

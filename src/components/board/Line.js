@@ -1,5 +1,6 @@
 import React from "react";
 import Tile from "./Tile";
+import {connect} from "react-redux";
 
 const Line = (props) => {
 
@@ -28,4 +29,6 @@ const Line = (props) => {
 
 };
 
-export default Line;
+const mapStateToProps = (state) => ({...state});
+
+export default connect(mapStateToProps)(Line);

@@ -1,4 +1,6 @@
 import React from "react";
+import * as actions from "../../actions/ticTacToeActions";
+import {connect} from "react-redux";
 
 const StartBtn = (props) => {
   let startBtnStyle = {
@@ -10,4 +12,9 @@ const StartBtn = (props) => {
   return  <button style={startBtnStyle} onClick={() => props.runGame()}>Wanna play the game?</button>;
 };
 
-export default StartBtn;
+
+const mapDispatchToPros = (dispatch) => ({
+  runGame: () => dispatch(actions.runGame(dispatch)),
+});
+
+export default connect(() => ({}), mapDispatchToPros) (StartBtn);

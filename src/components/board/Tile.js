@@ -1,8 +1,8 @@
 import React from "react";
 
 const Tile = (props) => {
-
-  const backgroundColor = props.sign === '' ? 'buttonface' : props.sign === 'X' ? 'HoneyDew' : 'Ivory';
+  let sign = props.tiles[props.idx][props.row];
+  const backgroundColor = sign === '' ? 'buttonface' : sign === 'X' ? 'HoneyDew' : 'Ivory';
   const style = {
     borderRadius: '1.75em',
     backgroundColor: backgroundColor,
@@ -17,10 +17,10 @@ const Tile = (props) => {
   return (
       <button
           style={{float: "left", textAlign: "center", ...style}}
-          onClick={() => onClick()}
+          onClick={onClick}
           disabled={disabled}
       >
-        {props.sign}
+        {sign}
       </button>
   )
 
