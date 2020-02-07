@@ -1,4 +1,6 @@
 import React from "react";
+import {connect} from "react-redux";
+import * as actions from "../../actions/ticTacToeActions";
 
 const Tile = (props) => {
   let sign = props.tiles[props.idx][props.row];
@@ -11,9 +13,9 @@ const Tile = (props) => {
     marginLeft: '13px', marginRight: '13px',
   };
 
+  const onClick = () => props.selectTile(props.idx, props.row, props.player, props.tiles);
 
-  const onClick = () => props.selectTile(props.row, props.idx);
-  const disabled = props.sign !== '' || props.gameEnded || !props.gameStarted;
+  const disabled = sign !== '' || props.gameEnded || !props.gameStarted;
   return (
       <button
           style={{float: "left", textAlign: "center", ...style}}
@@ -26,8 +28,15 @@ const Tile = (props) => {
 
 };
 
-Tile.defaultProps = {
+Tile.defaultProps = {};
 
-};
+const mapStateToProps = (state) => ({
+  player: state.player,
+  tiles: state.tiles
+});
 
-export default Tile;
+const mapDispatchToPros = (dispatch) => ({
+  selectTile: (x, y, player, tiles) => dispatch(actions.selectTile(x, y, player, tiles)),
+});
+
+export default connect(mapStateToProps, mapDispatchToPros) (Tile);

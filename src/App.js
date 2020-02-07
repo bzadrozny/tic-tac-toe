@@ -1,8 +1,10 @@
 import React from 'react';
-import './App.css';
+import {connect} from "react-redux";
+import * as actions from "./actions/ticTacToeActions"
 import Header from "./components/header/Header";
 import Board from "./components/board/Board";
 import Footer from "./components/footer/Footer";
+import './App.css';
 
 class App extends React.Component {
 
@@ -16,14 +18,14 @@ class App extends React.Component {
   };
 
   componentWillUnmount() {
-    clearInterval(this.state.timer)
+    this.props.clearTimer();
   }
 
   render() {
-    const {time, player, tiles, gameEnded, gameStarted} = this.state;
+    const {time, player, gameEnded, gameStarted} = this.props;
     const footer = () => {
       if (gameEnded || gameStarted) {
-        return <Footer resetBoard={this.resetBoard}/>;
+        return <Footer/>;
       }
     };
     return (
@@ -37,4 +39,11 @@ class App extends React.Component {
 
 }
 
-export default App;
+const mapStateToProps = (state) => ({...state});
+
+const mapDispatchToPros = (dispatch) => ({
+  clearTimer: () => dispatch(actions.clearTimer()),
+  resetBoard: () => dispatch(actions.resetBoard())
+});
+
+export default connect(mapStateToProps, mapDispatchToPros)(App);

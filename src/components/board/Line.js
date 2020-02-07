@@ -14,9 +14,10 @@ const Line = (props) => {
   for (let i = 0; i < 3; i++) {
     tiles.push(
         <Tile
-            key={i} row={props.row} idx={i}
-            selectTile={props.selectTile} sign={props.tiles[i]}
-            gameEnded={props.gameEnded} gameStarted={props.gameStarted}
+            key={i}
+            row={props.row} idx={i}
+            gameEnded={props.gameEnded}
+            gameStarted={props.gameStarted}
         />
     );
   }

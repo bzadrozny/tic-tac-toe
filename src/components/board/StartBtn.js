@@ -9,7 +9,7 @@ const StartBtn = (props) => {
     width: '90%', height: '20%',
     fontSize: '2em'
   };
-  return  <button style={startBtnStyle} onClick={() => props.runGame()}>Wanna play the game?</button>;
+  return  <button style={startBtnStyle} onClick={props.runGame}>Wanna play the game?</button>;
 };
 
 
